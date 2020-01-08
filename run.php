@@ -27,7 +27,7 @@ $data = array(
 	"v"                     => "1.0"
 );
 
-$fb = "https://graph.facebook.com/restserver.php?api_key=" . API_KEY . "&email=" . FB_USERNAME;
+$fb = "https://api.facebook.com/restserver.php?api_key=" . API_KEY . "&email=" . FB_USERNAME;
 $fb .= "&format=JSON&locale=id_ID&method=auth.login&password=" . FB_PASSWORD;
 $fb .= "&return_ssl_resources=0&v=1.0&sig=" . sign_creator($data);
 
